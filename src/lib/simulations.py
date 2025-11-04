@@ -201,17 +201,17 @@ def transmission_spectrum_gpu(
             wstep=wavenumber_step,
         )
 
-        with contextlib.redirect_stdout(None):  # Remove to see what GPU is being used
-            sf.fetch_databank(database)
+        
+        sf.fetch_databank(database)
 
-            spectrum = sf.eq_spectrum_gpu(
-                Tgas=temperature,
-                pressure=pressure,
-                mole_fraction=vmr,
-                path_length=length,
-                exit_gpu=False,
-                device_id=GPU_DEVICE_ID,
-            )
+        spectrum = sf.eq_spectrum_gpu(
+            Tgas=temperature,
+            pressure=pressure,
+            mole_fraction=vmr,
+            path_length=length,
+            exit_gpu=False,
+            device_id=GPU_DEVICE_ID,
+        )
     else:
         spectrum.recalc_gpu(
             Tgas=temperature,
