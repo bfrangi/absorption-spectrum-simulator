@@ -14,11 +14,11 @@ OS = os.name
 radis_path = ""
 vaex_path = ""
 if OS == WINDOWS:
-    radis_path = "..\.venv\Lib\site-packages\\radis\\"
-    vaex_path = "..\.venv\Lib\site-packages\\vaex\\"
+    radis_path = "..\\.venv\\Lib\\site-packages\\radis\\"
+    vaex_path = "..\\.venv\\Lib\\site-packages\\vaex\\"
 elif OS == POSIX:
-    radis_path = "../.venv/lib/python3.10/site-packages/radis/"
-    vaex_path = "../.venv/lib/python3.10/site-packages/vaex/"
+    radis_path = "../.venv/lib/python3.12/site-packages/radis/"
+    vaex_path = "../.venv/lib/python3.12/site-packages/vaex/"
 else:
     print(f"Unknown OS: {OS}.")
     sys.exit(1)
