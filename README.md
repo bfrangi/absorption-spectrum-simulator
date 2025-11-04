@@ -25,7 +25,7 @@ cd absorption-spectrum-simulator
 ```bash
 sudo apt-get update
 sudo apt-get install python3-venv
-python3.10 -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
 ```
 
@@ -52,12 +52,12 @@ git clone https://github.com/bfrangi/absorption-spectrum-simulator.git
 cd absorption-spectrum-simulator
 ```
 
-2. Install `Python3.10` from the Microsoft Store.
+2. Install `python3.12` from the Microsoft Store.
 
 3. Create a virtual environment:
 
 ```bash
-python3.10 -m venv .venv
+python3.12 -m venv .venv
 .\.venv\Scripts\activate.bat
 ```
 
