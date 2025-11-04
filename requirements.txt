@@ -58,7 +58,7 @@ mdurl==0.1.2
 more-itertools==10.8.0
 mpldatacursor==0.7.1
 msgpack==1.1.2
-narwhals==2.10.1
+narwhals==2.10.2
 ndindex==1.10.0
 nest-asyncio==1.6.0
 numba==0.62.1

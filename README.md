@@ -21,15 +21,14 @@ cd absorption-spectrum-simulator
 ```bash
 sudo apt-get update
 sudo apt-get install python3-venv
-python3.12 -m venv .venv
+python3.10 -m venv .venv
 source .venv/bin/activate
 ```
 
-3. Install dependencies and apply the radis patch to supress `vaex` output and fix a `vaex` bug:
+3. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
-python radis-patch/apply.py
 ```
 
 4. [Optional] If you want to use LaTeX for plotting, install the `texlive` package:
